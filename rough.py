@@ -1,13 +1,12 @@
 class Student:
-    name = "Parikh"
-    def store_details(self):
-        self.age = 60
-    def print_age(self):
+    def __init__(self, name, age):
+        self.__name = name
+        self.age = age
+
+    def print_student_details(self):
+        print(self.__name, end=" ")
         print(self.age)
-    @staticmethod
-    def stu_fun():
-        print("hello students")
-        #name="rahi"
-        print(s.name)
-s = Student()
-s.stu_fun()
+
+
+s = Student("Rohan", 20)
+s.print_student_details()
